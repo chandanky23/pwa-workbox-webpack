@@ -10,12 +10,24 @@ module.exports = {
     filename: "app.js",
     path: path.resolve(__dirname, "dist"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   plugins: [
     new CopyWebpackPlugin([
       {
         from: "./src/assets",
         to: "assets/",
       },
+      {
+        from: "./src/app.css",
+        to: 'app.css'
+      }
     ]),
     new HtmlWebpackPlugin({
       filename: "index.html",

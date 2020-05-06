@@ -1,0 +1,26 @@
+#installContainer {
+  position: fixed;
+  bottom: 1em;
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+#installInfo {
+  background-color: #00897B;
+  margin: 10px;
+  padding: 1em;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#installContainer button {
+  background-color: inherit;
+  color: white;
+  font-size: 1em;
+  padding: 0.75em;
+  margin-right: 20px;
+}
