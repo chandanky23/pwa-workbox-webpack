@@ -8,6 +8,10 @@ setTimeout(() => {
   installContainer.style.display = 'block'
 }, 5000)
 
+btnCancel.addEventListener("click", () => {
+  installContainer.style.display = 'none';
+})
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => res.json())
   .then((res) => {
